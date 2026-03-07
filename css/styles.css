@@ -36,6 +36,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: var(--fuente-heading);
+    line-height: 1.2;
 }
 
 h1 {
@@ -78,6 +79,10 @@ img {
 
 .btn-primario {
     background-color: var(--negro);
+}
+
+.btn-secundario {
+    background-color: var(--primario);
 }
 
 /** Utilidades **/
@@ -169,4 +174,33 @@ img {
 .entrada:last-of-type {
     border-bottom: none;
     margin-bottom: 0;
+}
+
+/** Sidebar **/
+.cursos {
+    list-style: none;
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-curso_label,
+.widget-curso_info {
+    font-size: 2rem;
+}
+
+.widget-curso_label {
+    font-family: var(--fuente-heading);
+    font-weight: 700;
+}
+
+.widget-curso_info {
+    font-weight: 400;
 }
