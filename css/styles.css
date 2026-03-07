@@ -214,3 +214,24 @@ img {
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+/** Sobre nosotros **/
+@media (min-width: 768px) {
+    /* Todo: Forma anterior
+    .sobre-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sobre-nosotros_img,
+    .sobre-nosotros_texto {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    */
+
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
