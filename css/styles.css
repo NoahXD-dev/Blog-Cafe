@@ -4,6 +4,7 @@
 
     --primario: #784d3c;
     --blanco: #fff;
+    --gris: #e1e1e1;
     --negro: #000;
 }
 
@@ -55,6 +56,28 @@ h4 {
 
 img {
     max-width: 100%;
+}
+
+.btn {
+    display: block;
+    font-family: var(--fuente-heading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+    }
+}
+
+.btn-primario {
+    background-color: var(--negro);
 }
 
 /** Utilidades **/
@@ -128,3 +151,22 @@ img {
     color: var(--blanco);
 }
 
+/** Contenido principal **/
+@media (min-width: 768px) {
+    .contenido_principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+/** Entrada **/
+.entrada {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
